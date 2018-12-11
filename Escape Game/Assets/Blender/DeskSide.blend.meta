@@ -1,13 +1,12 @@
 fileFormatVersion: 2
-guid: 93c74cda93997504ca09441c529153cf
+guid: 716c1c4170a7eca4980d577114735483
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
     2100000: Material
-    2100002: Material_001
-    2100004: Glass
+    2100002: Legs
     2300000: //RootNode
     3300000: //RootNode
     4300000: Cube
