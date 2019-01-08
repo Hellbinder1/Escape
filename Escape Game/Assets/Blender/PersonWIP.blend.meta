@@ -40,6 +40,7 @@ ModelImporter:
     100068: Bone_033
     100070: Bone_034
     100072: //RootNode
+    100074: Cube
     400000: Armature
     400002: Bone
     400004: Bone_001
@@ -77,9 +78,12 @@ ModelImporter:
     400068: Bone_033
     400070: Bone_034
     400072: //RootNode
+    400074: Cube
     2100000: Material
     2300000: //RootNode
+    2300002: Cube
     3300000: //RootNode
+    3300002: Cube
     4300000: Cube
     7400000: Default Take
     9500000: //RootNode
@@ -155,7 +159,6 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
