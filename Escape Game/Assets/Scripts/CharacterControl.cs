@@ -24,5 +24,20 @@ public class CharacterControl : MonoBehaviour {
 
         if (Input.GetKeyDown("escape"))
             Cursor.lockState = CursorLockMode.None;
+
+
+
+        //var personPos = transform.position;
+        //var keyPos = GameObject.Find("Key").transform.position;
+        //var doorPos = GameObject.Find("Door").transform.position;
+
+        //get the duistqnce between 2 points
+       // var distancePersonKey = Mathf.Sqrt(Mathf.Pow(keyPos.x - personPos.x, 2) + Mathf.Pow(keyPos.y - personPos.y, 2) + Mathf.Pow(keyPos.z - personPos.z, 2));
+
+       // var distancePersonDoor = Mathf.Sqrt(Mathf.Pow(doorPos.x - personPos.x, 2) + Mathf.Pow(doorPos.y - personPos.y, 2) + Mathf.Pow(doorPos.z - personPos.z, 2));
+
+        //Debug.Log(distancePersonKey);
+       // Debug.Log(distancePersonDoor);
     }
+
 }
