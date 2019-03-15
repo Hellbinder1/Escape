@@ -11,7 +11,17 @@ public class RaycastSelect : MonoBehaviour
 
     private GameObject currentTarget;
 
+    GameObject door;
+
     // Update is called once per frame
+
+    void Start()
+    {
+        door = GameObject.Find("Door");
+    }
+
+
+
     void Update()
     {
         RaycastHit hit;
@@ -29,6 +39,15 @@ public class RaycastSelect : MonoBehaviour
                 OnRaycastLeave(currentTarget);
                 currentTarget = hit.transform.gameObject;
                 OnRaycastEnter(currentTarget);
+            }
+
+            else if (currentTarget != door)
+            {
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    var newRot = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0.0f, 90.0f, 0.0f), Time.deltaTime * 200);
+                    transform.rotation = newRot;
+                }
             }
         }
 

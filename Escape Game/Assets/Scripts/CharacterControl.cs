@@ -22,6 +22,9 @@ public class CharacterControl : MonoBehaviour {
 
         transform.Translate(straffe, 0, translation);
 
+       // Debug.Log(straffe);
+       // Debug.Log(translation);
+
         if (Input.GetKeyDown("escape"))
             Cursor.lockState = CursorLockMode.None;
 

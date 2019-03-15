@@ -27,6 +27,7 @@ public class DoorScript : MonoBehaviour
             {
                 if (doorKey)
                 {
+
                     if (Input.GetKeyDown(KeyCode.E))
                     {
                         open = true;
