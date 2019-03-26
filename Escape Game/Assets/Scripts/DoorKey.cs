@@ -18,12 +18,22 @@ public class DoorKey : MonoBehaviour
 
     void Update()
     {
+        var personPos = transform.position;
+        var keyPos = GameObject.Find("Key").transform.position;
+        var distancePersonKey = Mathf.Sqrt(Mathf.Pow(keyPos.x - personPos.x, 2) + Mathf.Pow(keyPos.y - personPos.y, 2) + Mathf.Pow(keyPos.z - personPos.z, 2));
+        var distanceKeyLimit = 0.000001;
+
+
         if (inTrigger)
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (distancePersonKey <= distanceKeyLimit)
             {
-                DoorScript.doorKey = true;
-                Destroy(this.gameObject);
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    DoorScript.doorKey = true;
+                    Destroy(this.gameObject);
+
+                }
             }
         }
     }

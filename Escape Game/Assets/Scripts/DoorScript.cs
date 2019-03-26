@@ -66,16 +66,16 @@ public class DoorScript : MonoBehaviour
         var personPos = transform.position;
         var keyPos = GameObject.Find("Key").transform.position;
         var doorPos = GameObject.Find("Door").transform.position;
-       // var distanceDoorLimit = float 2.0;
+        var distanceDoorLimit = 1;
 
-        //get the duistqnce between 2 points
+        //get the distance between 2 points
         var distancePersonKey = Mathf.Sqrt(Mathf.Pow(keyPos.x - personPos.x, 2) + Mathf.Pow(keyPos.y - personPos.y, 2) + Mathf.Pow(keyPos.z - personPos.z, 2));
 
         float distancePersonDoor = Mathf.Sqrt(Mathf.Pow(doorPos.x - personPos.x, 2) + Mathf.Pow(doorPos.y - personPos.y, 2) + Mathf.Pow(doorPos.z - personPos.z, 2));
 
         if (inTrigger)
         {
-            //if (distancePersonDoor <= distanceDoorLimit);
+            if (distancePersonDoor <= distanceDoorLimit)
             {
 
 
